@@ -1,0 +1,46 @@
+.adjustTitle {
+    padding: 80px;
+    text-align: center;
+    font-family: "Futura Hv BT";
+    font-size: 1.5em;
+}
+
+.parametersCards {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    font-family: "Futura Hv BT";
+    font-size: 26px;
+    width: 420px;
+    height: 420px;
+    border: 1px solid #181818;
+    border-radius: 15px;
+    background-color: #181818;
+    color: white;
+    margin: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    padding-top: 10px;
+}
+
+.card label {
+    font-family: "Futura Lt BT";
+    font-size: 16px;
+}
+
+.card input {
+    font-family: "Futura LT BT";
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 240px;
+}
