@@ -1,31 +1,37 @@
 import "../styles/Parameters.css";
 import propTypes from "prop-types";
-function Card(props) {
+
+function ParamCard(props) {
     return (
         <>
             <div className={props.className}>
-                <p>HUMIDITY</p>
+                <p>{props.cardTitle}</p>
                 <img src={props.src} alt={props.altName} />
                 <br />
                 <br />
                 <br />
                 <br />
-                <form action="">
-                    <label htmlFor="">Input a Value</label>
+                <form action="" method="POST">
+                    <label>Input a Value</label>
                     <br />
                     <input
                         type="text"
                         name={props.name}
                         className={props.inputClassName}
                         placeholder="Value"
+                        required
                     />
                 </form>
+                <br />
+                <br />
+                <button className="submit">Save</button>
             </div>
         </>
     );
 }
 
-Card.propTypes = {
+ParamCard.propTypes = {
+    cardTitle: propTypes.string,
     name: propTypes.string,
     src: propTypes.string,
     altName: propTypes.string,
@@ -33,4 +39,4 @@ Card.propTypes = {
     inputClassName: propTypes.string,
 };
 
-export default Card;
+export default ParamCard;
