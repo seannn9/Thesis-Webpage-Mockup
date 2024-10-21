@@ -5,12 +5,17 @@
     font-size: 1.5em;
 }
 
-.parametersCards {
+.parametersCards,
+.presetContainer {
     display: flex;
     justify-content: space-evenly;
     min-height: 100vh;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.presetContainer {
+    min-height: 70vh;
 }
 
 .card {
@@ -25,7 +30,6 @@
     margin: 10px;
     padding: 40px 20px;
     text-align: center;
-    cursor: pointer;
 }
 
 .card img {
@@ -39,8 +43,69 @@
 
 .card input {
     font-family: "Futura LT BT";
+    font-size: 16px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
     width: 240px;
+    border: none;
+}
+
+.card input:focus {
+    outline: 1px solid #34f47e;
+}
+
+.submit {
+    background-color: #34f47e;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family: "Futura Lt BT";
+    font-size: 16px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    background-color: #2dd16c;
+}
+
+.savePreset {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+}
+
+.savePreset .saveBtn {
+    padding: 20px 28px;
+    border: 1px solid black;
+    /* background-color: #181818; */
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Futura Lt BT";
+    font-size: 16px;
+    background-image: linear-gradient(
+        90deg,
+        #181818 0%,
+        #181818 50%,
+        white 50%,
+        white 100%
+    );
+    background-size: 300%;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+        color 0.2s linear;
+    transition-delay: 0s, 0.15s;
+}
+
+.saveBtn:hover {
+    background-position: -50% 100%;
+    color: #181818;
+}
+
+.presetContainer a {
+    text-decoration: none;
 }
