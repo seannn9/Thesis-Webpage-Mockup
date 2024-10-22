@@ -18,6 +18,7 @@ function Login() {
                     Login
                 </Link>
             </div>
+            <div className="mainContainer"></div>
         </>
     );
 }

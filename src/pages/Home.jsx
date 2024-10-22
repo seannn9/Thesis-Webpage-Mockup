@@ -8,9 +8,9 @@ function Home() {
     return (
         <>
             <div className="navbar">
-                <Link className="active" to="/">
+                <HashLink className="active" to="#intro" smooth>
                     Home
-                </Link>
+                </HashLink>
                 <HashLink to="#about" smooth>
                     About
                 </HashLink>
@@ -23,7 +23,7 @@ function Home() {
                     Login
                 </Link>
             </div>
-            <div className="backgroundContainer">
+            <div className="backgroundContainer" id="intro">
                 <div className="thesisTitle">
                     Optimizing Plant Growth with Automated System for Controlled
                     Environment Parameters
