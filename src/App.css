@@ -26,11 +26,6 @@
     margin: 5px;
 }
 
-.navbar .loginNav {
-    float: right !important;
-    margin-right: 20px;
-}
-
 .navbar a {
     display: block;
     color: white;
@@ -146,6 +141,20 @@
     border: 1px solid;
     border-radius: 8px;
     font-family: "Futura Lt BT";
+}
+
+.contactContainer form input {
+    width: 200px;
+}
+
+.contactContainer form textarea {
+    width: 400px;
+    height: 150px;
+}
+
+.contactContainer form input:focus,
+.contactContainer form textarea:focus {
+    border-color: #34f47e;
 }
 
 .socialMedia img {

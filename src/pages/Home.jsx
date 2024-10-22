@@ -3,27 +3,13 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import About from "./About";
 import Contact from "./Contact";
+import Navbar from "../components/Navbar";
 
 function Home() {
     return (
         <>
-            <div className="navbar">
-                <HashLink className="active" to="#intro" smooth>
-                    Home
-                </HashLink>
-                <HashLink to="#about" smooth>
-                    About
-                </HashLink>
-                <HashLink to="#contact" smooth>
-                    Contact
-                </HashLink>
-                <Link to="/parameters">Parameters</Link>
-                <Link to="/presets">Presets</Link>
-                <Link className="loginNav" to="/login">
-                    Login
-                </Link>
-            </div>
-            <div className="backgroundContainer" id="intro">
+            <Navbar activeHome="active" />
+            <div className="backgroundContainer" id="home">
                 <div className="thesisTitle">
                     Optimizing Plant Growth with Automated System for Controlled
                     Environment Parameters

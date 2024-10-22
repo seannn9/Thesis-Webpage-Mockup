@@ -22,8 +22,6 @@ function Contact() {
                             required
                             style={{
                                 resize: "none",
-                                width: "200px",
-                                height: "100px",
                             }}
                         ></textarea>
                         <br />

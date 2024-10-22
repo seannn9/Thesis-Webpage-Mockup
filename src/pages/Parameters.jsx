@@ -6,27 +6,13 @@ import humidityImg from "../images/humidity.png";
 import tempImg from "../images/temperatures.png";
 import lightImg from "../images/bulb.png";
 import soilMoistImg from "../images/meter.png";
-import ParamCard from "../components/ParamCard"; // Card component to avoid repeating code
+import ParamCard from "../components/ParamCard";
+import Navbar from "../components/Navbar";
 
 function Parameters() {
     return (
         <>
-            <div className="navbar">
-                <Link to="/">Home</Link>
-                <HashLink to="/#about" smooth>
-                    About
-                </HashLink>
-                <HashLink to="/#contact" smooth>
-                    Contact
-                </HashLink>
-                <Link className="active" to="/parameters">
-                    Parameters
-                </Link>
-                <Link to="/presets">Presets</Link>
-                <Link className="loginNav" to="/login">
-                    Login
-                </Link>
-            </div>
+            <Navbar activeParams="active" />
             <div className="adjustTitle">
                 <h1>Adjust Parameters</h1>
             </div>
