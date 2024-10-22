@@ -69,12 +69,12 @@
 .backgroundContainer .thesisTitle {
     background-color: aliceblue;
     opacity: 0.75;
+    font-size: 48px;
     font-family: "Futura";
     border-radius: 20px;
     max-width: 700px;
     padding: 20px;
     margin-left: 50px;
-    font-size: 48px;
 }
 
 .introduction {
@@ -97,4 +97,57 @@
     font-size: 20px;
     max-width: 700px;
     margin: 0 auto;
+}
+
+.aboutSection {
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.aboutSection h2 {
+    font-family: "Futura Hv BT";
+    font-size: 48px;
+}
+
+.aboutSection p {
+    font-family: "Futura Lt BT";
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contactContainer {
+    text-align: center;
+    padding: 40px 40px;
+    background-color: #181818;
+}
+
+.contactContainer h2 {
+    font-family: "Futura Hv BT";
+    font-size: 48px;
+    color: #34f47e;
+}
+
+.contactContainer p {
+    color: white;
+}
+
+.contactContainer form {
+    margin-top: 20px;
+}
+
+.contactContainer form input,
+.contactContainer form textarea {
+    margin: 15px 0px 20px 0px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 8px;
+    font-family: "Futura Lt BT";
+}
+
+.socialMedia img {
+    margin: 50px 20px 0px 20px;
 }

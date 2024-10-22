@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import PresetCard from "../components/PresetCard";
 import addImg from "../images/add.png";
 
@@ -8,8 +9,12 @@ function Presets() {
         <>
             <div className="navbar">
                 <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <HashLink to="/#about" smooth>
+                    About
+                </HashLink>
+                <HashLink to="/#contact" smooth>
+                    Contact
+                </HashLink>
                 <Link to="/parameters">Parameters</Link>
                 <Link className="active" to="/presets">
                     Presets

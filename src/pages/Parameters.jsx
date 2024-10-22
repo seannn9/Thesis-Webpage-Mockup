@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import React from "react";
 import "../styles/Parameters.css";
 import humidityImg from "../images/humidity.png";
@@ -12,8 +13,12 @@ function Parameters() {
         <>
             <div className="navbar">
                 <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <HashLink to="/#about" smooth>
+                    About
+                </HashLink>
+                <HashLink to="/#contact" smooth>
+                    Contact
+                </HashLink>
                 <Link className="active" to="/parameters">
                     Parameters
                 </Link>

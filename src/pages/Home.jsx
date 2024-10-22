@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import About from "./About";
+import Contact from "./Contact";
 
 function Home() {
     return (
@@ -8,8 +11,12 @@ function Home() {
                 <Link className="active" to="/">
                     Home
                 </Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <HashLink to="#about" smooth>
+                    About
+                </HashLink>
+                <HashLink to="#contact" smooth>
+                    Contact
+                </HashLink>
                 <Link to="/parameters">Parameters</Link>
                 <Link to="/presets">Presets</Link>
                 <Link className="loginNav" to="/login">
@@ -41,6 +48,8 @@ function Home() {
                     dolorem ipsum quia dolor sit amet, consectetur, adipisci.
                 </p>
             </div>
+            <About />
+            <Contact />
         </>
     );
 }
