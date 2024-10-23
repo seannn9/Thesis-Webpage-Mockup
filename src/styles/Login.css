@@ -1,0 +1,90 @@
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    color: white;
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    border-radius: 10px;
+    height: 450px;
+    min-width: 470px;
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.formContainer form legend {
+    align-self: flex-start;
+    padding: 35px 0px 18px 0px;
+    font-family: "Futura Hv Bt", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.formContainer form label:not(.terms) {
+    align-self: flex-start;
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+}
+
+.formContainer form input:not(#acceptTerms) {
+    background-color: #1e1e1e;
+    font-size: 16px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+    width: 100%;
+}
+
+.formContainer .acceptBox {
+    display: flex;
+    align-self: flex-start;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+}
+
+.formContainer .acceptBox input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 25px;
+    accent-color: #34f47e;
+}
+
+.formContainer button {
+    background-color: #34f47e;
+    color: #1e1e1e;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.formContainer button:hover {
+    background-color: #2dd16c;
+}
+
+.formContainer form p {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.formContainer form p a {
+    text-decoration: none;
+    color: #34f47e;
+}
