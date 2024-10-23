@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import About from "./About";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";

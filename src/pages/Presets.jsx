@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import PresetCard from "../components/PresetCard";
 import addImg from "../images/add.png";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Presets() {
     return (

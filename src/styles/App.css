@@ -5,7 +5,7 @@
 
 #root {
     margin: 0;
-    font-family: "Futura BK BT";
+    font-family: "Futura BK BT", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .backgroundContainer {
-    background-image: url("./images/minigreenhouse.jpg");
+    background-image: url("../images/minigreenhouse.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -65,7 +65,7 @@
     background-color: aliceblue;
     opacity: 0.75;
     font-size: 48px;
-    font-family: "Futura";
+    font-family: "Futura", Arial, Helvetica, sans-serif;
     border-radius: 20px;
     max-width: 700px;
     padding: 20px;
@@ -80,13 +80,13 @@
 }
 
 .introduction h2 {
-    font-family: "Futura Hv BT";
+    font-family: "Futura Hv BT", Arial, Helvetica, sans-serif;
     font-size: 48px;
     color: #34f47e;
 }
 
 .introduction p {
-    font-family: "Futura Lt BT";
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
     padding-top: 20px;
     text-align: justify;
     font-size: 20px;
@@ -100,12 +100,12 @@
 }
 
 .aboutSection h2 {
-    font-family: "Futura Hv BT";
+    font-family: "Futura Hv BT", Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 
 .aboutSection p {
-    font-family: "Futura Lt BT";
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
     padding-top: 20px;
     text-align: justify;
     font-size: 20px;
@@ -120,7 +120,7 @@
 }
 
 .contactContainer h2 {
-    font-family: "Futura Hv BT";
+    font-family: "Futura Hv BT", Arial, Helvetica, sans-serif;
     font-size: 48px;
     color: #34f47e;
 }
@@ -140,7 +140,7 @@
     outline: none;
     border: 1px solid;
     border-radius: 8px;
-    font-family: "Futura Lt BT";
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
 }
 
 .contactContainer form input {

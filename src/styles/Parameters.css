@@ -1,7 +1,7 @@
 .adjustTitle {
     padding: 80px;
     text-align: center;
-    font-family: "Futura Hv BT";
+    font-family: "Futura Hv BT", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .card {
-    font-family: "Futura Hv BT";
+    font-family: "Futura Hv BT", Arial, Helvetica, sans-serif;
     font-size: 26px;
     width: 420px;
     height: 420px;
@@ -37,12 +37,12 @@
 }
 
 .card label {
-    font-family: "Futura Lt BT";
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 .card input {
-    font-family: "Futura LT BT";
+    font-family: "Futura LT BT", Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 10px;
     padding: 15px;
@@ -59,17 +59,18 @@
 
 .submit {
     background-color: #34f47e;
+    color: #181818;
     border: none;
     border-radius: 8px;
     padding: 12px 20px;
-    font-family: "Futura Lt BT";
-    font-size: 16px;
-    transition: transform 0.3s;
+    font-family: "Futura Md BT", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: transform 0.3s ease, background-color 0.3s;
     cursor: pointer;
 }
 
 .submit:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-color: #2dd16c;
 }
 
@@ -85,7 +86,7 @@
     color: white;
     cursor: pointer;
     border-radius: 8px;
-    font-family: "Futura Lt BT";
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-image: linear-gradient(
         90deg,
@@ -109,3 +110,11 @@
 .presetContainer a {
     text-decoration: none;
 }
+
+/* img {
+    transition: transform 2s;
+}
+
+img:hover {
+    transform: rotate(360deg) scale(1.5);
+} */

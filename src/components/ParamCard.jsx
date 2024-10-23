@@ -21,10 +21,13 @@ function ParamCard(props) {
                         placeholder="Value"
                         required
                     />
+                    <br />
+                    <br />
+                    <br />
+                    <button className="submit" name="submit" value="Submit">
+                        Save
+                    </button>
                 </form>
-                <br />
-                <br />
-                <button className="submit">Save</button>
             </div>
         </>
     );

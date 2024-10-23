@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import React from "react";
 import "../styles/Parameters.css";
 import humidityImg from "../images/humidity.png";
