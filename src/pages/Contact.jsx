@@ -1,6 +1,7 @@
 import facebook from "../images/facebook.png";
 import twitter from "../images/twitter.png";
 import instagram from "../images/instagram.png";
+import github from "../images/github.png";
 
 function Contact() {
     return (
@@ -31,14 +32,29 @@ function Contact() {
                     </form>
                 </div>
                 <div className="socialMedia">
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <img src={facebook} alt="Facebook" />
                     </a>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="https://x.com" target="_blank" rel="noreferrer">
                         <img src={twitter} alt="Twitter" />
                     </a>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <img src={instagram} alt="Instagram" />
+                    </a>
+                    <a
+                        href="https://github.com/seannn9/Thesis-Webpage-Mockup"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={github} alt="Github" />
                     </a>
                 </div>
             </div>
