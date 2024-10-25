@@ -167,6 +167,9 @@
 
 #about {
     animation: fade-in-right 1s linear;
+    animation-timeline: view(
+        100vh 0px
+    ); /* animation starts when element is 0px from the bottom and end when element is 900px from the top*/
 }
 
 @keyframes fade-in-left {
@@ -182,7 +185,7 @@
 
 @keyframes fade-in-right {
     from {
-        transform: translateX(500px);
+        transform: translateX(300px);
         opacity: 0;
     }
     to {
