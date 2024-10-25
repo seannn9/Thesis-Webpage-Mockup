@@ -49,11 +49,11 @@ function Login() {
                         </button>
                         <br />
                         <br />
-                        <p>
-                            Already have an account?&nbsp;
-                            <Link to="/">Login</Link>
-                        </p>
                     </form>
+                    <p>
+                        Already have an account?&nbsp;
+                        <Link to="/">Login</Link>
+                    </p>
                 </div>
             </div>
         </>

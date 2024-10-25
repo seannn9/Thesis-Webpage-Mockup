@@ -6,11 +6,13 @@
 }
 
 .formContainer {
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: #1e1e1e;
     padding: 20px 40px;
     border-radius: 10px;
-    height: 450px;
+    min-height: 450px;
     min-width: 470px;
 }
 
@@ -83,12 +85,12 @@
     background-color: #2dd16c;
 }
 
-.formContainer form p {
+.formContainer p {
+    text-align: center;
     margin-top: auto;
-    margin-bottom: 10px;
 }
 
-.formContainer form p a {
+.formContainer p a {
     text-decoration: none;
     color: #34f47e;
 }
