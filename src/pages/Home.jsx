@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";
+import "../styles/App.css";
 
 function Home() {
     return (
@@ -14,8 +15,8 @@ function Home() {
                 </div>
             </div>
             <div className="introduction">
-                <h2>Welcome To Our Website</h2>
-                <p>
+                <h2 className="fadeIn">Welcome To Our Website</h2>
+                <p className="fadeIn">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation

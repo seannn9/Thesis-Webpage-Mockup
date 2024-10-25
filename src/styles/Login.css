@@ -47,6 +47,10 @@
     width: 100%;
 }
 
+.formContainer form input:focus {
+    outline: 1px solid #34f47e !important;
+}
+
 .formContainer .acceptBox {
     display: flex;
     align-self: flex-start;

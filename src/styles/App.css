@@ -160,3 +160,20 @@
 .socialMedia img {
     margin: 50px 20px 0px 20px;
 }
+
+.introduction .fadeIn,
+#about {
+    animation: fade-in 1s linear;
+    animation-timeline: view();
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
