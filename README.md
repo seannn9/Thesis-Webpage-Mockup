@@ -5,4 +5,4 @@ This website is a mockup for our thesis about automating plant growth through co
 Dependencies:
 
 -   react-router-dom (`npm install react-router-dom@latest`)
--   react-router-hash-link ('npm install react-router-hash-link@latest')
+-   react-router-hash-link (`npm install react-router-hash-link@latest`)
