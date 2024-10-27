@@ -6,3 +6,4 @@ Dependencies:
 
 -   react-router-dom (`npm install react-router-dom@latest`)
 -   react-router-hash-link (`npm install react-router-hash-link@latest`)
+-   react-helmet (`npm install react-helmet@latest`)
