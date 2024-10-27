@@ -27,7 +27,7 @@ function Navbar(props) {
                     to="/login"
                     style={{ marginRight: "20px", float: "right" }}
                 >
-                    Login
+                    Login / Register
                 </Link>
             </div>
         </>
