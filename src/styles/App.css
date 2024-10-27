@@ -30,7 +30,6 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     border-radius: 10px;
     padding: 8px 16px;
@@ -163,19 +162,31 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .introduction .fadeIn {
-        animation: fade-in-left 1s;
+        animation: fade-in-right 1s;
     }
 
-    /* #about {
-        animation: fade-in-right 1s linear;
-        animation-timeline: view(
-            100vh 0px
-        ); animation starts when element is 0px from the bottom and end when element is 900px from the top
-    } */
+    .thesisTitle {
+        animation: fade-in 1s;
+    }
 
-    @keyframes fade-in-left {
+    #about {
+        animation: fade-in 1s;
+    }
+
+    @keyframes fade-in {
         from {
             transform: translateX(-300px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 0.75;
+        }
+    }
+
+    @keyframes fade-in-right {
+        from {
+            transform: translateX(300px);
             opacity: 0;
         }
         to {
@@ -194,4 +205,25 @@
             opacity: 1;
         }
     } */
+}
+
+.rightContainer {
+    display: flex;
+}
+
+.rightContainer button {
+    border: none;
+    background-color: transparent !important;
+    margin-left: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.rightContainer button img {
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.rightContainer button img:hover {
+    background-color: #333;
 }
