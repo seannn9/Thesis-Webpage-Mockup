@@ -5,7 +5,7 @@ function ParamCard(props) {
     return (
         <>
             <div className={props.className}>
-                <p>{props.cardTitle}</p>
+                <p className="cardTitle">{props.cardTitle}</p>
                 <img src={props.src} alt={props.altName} />
                 <br />
                 <br />

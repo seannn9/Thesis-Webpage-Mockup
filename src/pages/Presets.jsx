@@ -31,11 +31,14 @@ function Presets() {
             <div className="presetContainer">
                 <PresetCard className="card" presetTitle="PRESET 1" />
                 <Link to="/parameters">
-                    <PresetCard
-                        className="card"
-                        presetTitle="ADD PRESET"
-                        src={addImg}
-                    />
+                    <div className="card">
+                        <p className="cardTitle">ADD PRESET</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <img src={addImg} />
+                    </div>
                 </Link>
             </div>
         </>

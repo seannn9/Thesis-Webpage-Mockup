@@ -57,6 +57,11 @@
     outline: 1px solid #34f47e;
 }
 
+.card p:not(.cardTitle) {
+    font-family: "Futura Bk BT", Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
 .submit {
     background-color: #34f47e;
     color: #181818;
@@ -109,4 +114,39 @@
 
 .presetContainer a {
     text-decoration: none;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons #del,
+.buttons #load {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Futura Lt BT", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons #load {
+    background-color: #34f47e;
+    border: 1px solid #34f47e;
+}
+
+.buttons #load:hover {
+    background-color: #2dd16c;
+}
+
+.buttons #del {
+    border: 1px solid white;
+}
+
+.buttons #edit {
+    border: none;
+    background-color: transparent;
 }

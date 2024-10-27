@@ -1,15 +1,28 @@
 import propTypes from "prop-types";
-
+import settingImg from "../images/setting.png";
 function PresetCard(props) {
     return (
         <>
             <div className={props.className}>
-                <p>{props.presetTitle}</p>
+                <p className="cardTitle">{props.presetTitle}</p>
                 <br />
                 <br />
                 <br />
+                <p>Humidity:</p>
+                <p>Temperature:</p>
+                <p>Light:</p>
+                <p>Soil Moisture:</p>
                 <br />
-                <img src={props.src} />
+                <br />
+                <br />
+
+                <div className="buttons">
+                    <button id="del">DELETE</button>
+                    <button id="edit">
+                        <img src={settingImg} />
+                    </button>
+                    <button id="load">LOAD</button>
+                </div>
             </div>
         </>
     );
