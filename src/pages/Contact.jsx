@@ -13,12 +13,36 @@ function Contact() {
                     or inquiries.
                 </p>
                 <div className="contactForm">
-                    <form>
-                        <input type="text" placeholder="Name" required />
+                    <form
+                        action="https://formsubmit.co/seanulric9@gmail.com"
+                        method="POST"
+                    >
+                        <input
+                            type="text"
+                            name="Name"
+                            placeholder="Name"
+                            required
+                        />
                         <br />
-                        <input type="email" placeholder="Email" required />
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="Optimizing Plant Growth Inquiry"
+                        ></input>
+                        <input
+                            type="hidden"
+                            name="_next"
+                            value="https://optimizingplantgrowth.vercel.app/#home"
+                        ></input>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
                         <br />
                         <textarea
+                            name="message"
                             placeholder="Message"
                             required
                             style={{
