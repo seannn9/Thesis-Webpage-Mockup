@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import propTypes from "prop-types";
+import notifImg from "../images/notification.png";
 
 function Navbar(props) {
     return (
@@ -22,13 +23,17 @@ function Navbar(props) {
                 <Link className={props.activePresets} to="/presets">
                     Presets
                 </Link>
-                <Link
-                    className={props.activeLogin}
-                    to="/login"
+                <div
+                    className="rightContainer"
                     style={{ marginRight: "20px", float: "right" }}
                 >
-                    Login / Register
-                </Link>
+                    <Link className={props.activeLogin} to="/login">
+                        Login / Register
+                    </Link>
+                    <button>
+                        <img src={notifImg} alt="Notification Icon" />
+                    </button>
+                </div>
             </div>
         </>
     );
