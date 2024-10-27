@@ -3,10 +3,27 @@ import PresetCard from "../components/PresetCard";
 import addImg from "../images/add.png";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import plantImg from "../images/plant.jpg";
 
 function Presets() {
     return (
         <>
+            <Helmet>
+                <style>
+                    {`
+                        html, body {
+                            height: 100%;
+                        }
+                        body {
+                            background-image: url(${plantImg});
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    `}
+                </style>
+            </Helmet>
             <Navbar activePresets="active" />
             <div className="adjustTitle">
                 <h1>Load Presets</h1>

@@ -6,10 +6,27 @@ import lightImg from "../images/bulb.png";
 import soilMoistImg from "../images/meter.png";
 import ParamCard from "../components/ParamCard";
 import Navbar from "../components/Navbar";
+import { Helmet } from "react-helmet";
+import plantImg from "../images/plant.jpg";
 
 function Parameters() {
     return (
         <>
+            <Helmet>
+                <style>
+                    {`
+                        html, body {
+                            min-height: 100%;
+                        }
+                        body {
+                            background-image: url(${plantImg});
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    `}
+                </style>
+            </Helmet>
             <Navbar activeParams="active" />
             <div className="adjustTitle">
                 <h1>Adjust Parameters</h1>

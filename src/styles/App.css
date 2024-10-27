@@ -161,17 +161,17 @@
     margin: 50px 20px 0px 20px;
 }
 
-.introduction .fadeIn {
-    animation: fade-in-left 1s;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-    #about {
+    .introduction .fadeIn {
+        animation: fade-in-left 1s;
+    }
+
+    /* #about {
         animation: fade-in-right 1s linear;
         animation-timeline: view(
             100vh 0px
-        ); /* animation starts when element is 0px from the bottom and end when element is 900px from the top*/
-    }
+        ); animation starts when element is 0px from the bottom and end when element is 900px from the top
+    } */
 
     @keyframes fade-in-left {
         from {
@@ -184,7 +184,7 @@
         }
     }
 
-    @keyframes fade-in-right {
+    /* @keyframes fade-in-right {
         from {
             transform: translateX(300px);
             opacity: 0;
@@ -193,5 +193,5 @@
             transform: translateX(0);
             opacity: 1;
         }
-    }
+    } */
 }

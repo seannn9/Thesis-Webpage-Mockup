@@ -1,10 +1,27 @@
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import "../styles/Login.css";
+import plantImg from "../images/plant.jpg";
+import { Helmet } from "react-helmet";
 
 function Login() {
     return (
         <>
+            <Helmet>
+                <style>
+                    {`
+                        html, body {
+                            height: 100vh;
+                        }
+                        body {
+                            background-image: url(${plantImg});
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    `}
+                </style>
+            </Helmet>
             <Navbar activeLogin="active" />
             <div className="mainContainer">
                 <div className="formContainer">
@@ -34,6 +51,7 @@ function Login() {
                                 id="acceptTerms"
                                 name="acceptTerms"
                                 value="Accept"
+                                title="Please accept the terms and conditions to proceed"
                                 required
                             />
                             <label htmlFor="acceptTerms" className="terms">
