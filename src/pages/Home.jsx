@@ -19,8 +19,10 @@ function Home() {
             <Notif status={isActive ? "active" : "notActive"} />
             <div className="backgroundContainer" id="home">
                 <div className="thesisTitle">
-                    Optimizing Plant Growth with Automated System for Controlled
-                    Environment Parameters
+                    <h4>
+                        Optimizing Plant Growth with Automated System for
+                        Controlled Environment Parameters
+                    </h4>
                 </div>
             </div>
             <div className="introduction">
