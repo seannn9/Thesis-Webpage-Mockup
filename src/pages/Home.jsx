@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";
 import "../styles/App.css";
+import Notif from "../components/Notification";
 
 function Home() {
+    const [isActive, setIsActive] = useState(false);
+    const toggleNotifications = () => {
+        setIsActive((prev) => !prev);
+    };
     return (
         <>
-            <Navbar activeHome="active" />
+            <Navbar
+                activeHome="active"
+                onNotificationClick={toggleNotifications}
+            />
+            <Notif status={isActive ? "active" : "notActive"} />
             <div className="backgroundContainer" id="home">
                 <div className="thesisTitle">
                     Optimizing Plant Growth with Automated System for Controlled

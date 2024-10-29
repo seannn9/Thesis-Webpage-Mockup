@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import propTypes from "prop-types";
@@ -30,7 +30,10 @@ function Navbar(props) {
                     <Link className={props.activeLogin} to="/login">
                         Login / Register
                     </Link>
-                    <button>
+                    <button
+                        style={{ cursor: "pointer" }}
+                        onClick={props.onNotificationClick}
+                    >
                         <img src={notifImg} alt="Notification Icon" />
                     </button>
                 </div>
@@ -40,6 +43,7 @@ function Navbar(props) {
 }
 
 Navbar.propTypes = {
+    onNotificationClick: propTypes.func,
     activeHome: propTypes.string,
     activeAbout: propTypes.string,
     activeContact: propTypes.string,

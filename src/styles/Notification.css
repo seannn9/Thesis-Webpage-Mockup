@@ -1,0 +1,34 @@
+.notificationSidebar {
+    margin: 75px 10px 10px 0px;
+    position: fixed;
+    height: 90vh;
+    min-width: 380px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notificationSidebar h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.notificationSidebar#active {
+    right: 0;
+}
+
+.notificationSidebar#notActive {
+    right: -20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .notificationSidebar#active {
+        transform: translateX(0px);
+    }
+
+    .notificationSidebar#notActive {
+        transform: translateX(380px);
+    }
+}

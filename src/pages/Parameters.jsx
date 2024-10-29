@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Parameters.css";
 import humidityImg from "../images/humidity.png";
 import tempImg from "../images/temperatures.png";
@@ -8,8 +8,13 @@ import ParamCard from "../components/ParamCard";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import plantImg from "../images/plant.jpg";
+import Notif from "../components/Notification";
 
 function Parameters() {
+    const [isActive, setIsActive] = useState(false);
+    const toggleNotifications = () => {
+        setIsActive((prev) => !prev);
+    };
     return (
         <>
             <Helmet>
@@ -27,7 +32,11 @@ function Parameters() {
                     `}
                 </style>
             </Helmet>
-            <Navbar activeParams="active" />
+            <Navbar
+                activeParams="active"
+                onNotificationClick={toggleNotifications}
+            />
+            <Notif status={isActive ? "active" : "notActive"} />
             <div className="adjustTitle">
                 <h1>Adjust Parameters</h1>
             </div>

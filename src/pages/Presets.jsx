@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import PresetCard from "../components/PresetCard";
 import addImg from "../images/add.png";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import plantImg from "../images/plant.jpg";
+import Notif from "../components/Notification";
 
 function Presets() {
+    const [isActive, setIsActive] = useState(false);
+    const toggleNotifications = () => {
+        setIsActive((prev) => !prev);
+    };
     return (
         <>
             <Helmet>
@@ -24,7 +29,11 @@ function Presets() {
                     `}
                 </style>
             </Helmet>
-            <Navbar activePresets="active" />
+            <Navbar
+                activePresets="active"
+                onNotificationClick={toggleNotifications}
+            />
+            <Notif status={isActive ? "active" : "notActive"} />
             <div className="adjustTitle">
                 <h1>Load Presets</h1>
             </div>
