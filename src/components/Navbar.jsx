@@ -31,6 +31,7 @@ function Navbar(props) {
                         Login / Register
                     </Link>
                     <button
+                        className={props.activeNotif}
                         style={{ cursor: "pointer" }}
                         onClick={props.onNotificationClick}
                     >
@@ -50,6 +51,7 @@ Navbar.propTypes = {
     activeParams: propTypes.string,
     activePresets: propTypes.string,
     activeLogin: propTypes.string,
+    activeNotif: propTypes.string,
 };
 
 export default Navbar;

@@ -32,6 +32,7 @@ function Presets() {
             <Navbar
                 activePresets="active"
                 onNotificationClick={toggleNotifications}
+                activeNotif={isActive ? "active" : "notActive"}
             />
             <Notif status={isActive ? "active" : "notActive"} />
             <div className="adjustTitle">

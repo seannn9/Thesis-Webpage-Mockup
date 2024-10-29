@@ -75,8 +75,8 @@
 }
 
 .submit:hover {
-    transform: scale(1.2);
     background-color: #2dd16c;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .savePreset {
@@ -140,13 +140,28 @@
 
 .buttons #load:hover {
     background-color: #2dd16c;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .buttons #del {
-    border: 1px solid white;
+    border: none;
+}
+
+.buttons #del:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .buttons #edit {
     border: none;
     background-color: transparent;
+}
+
+.buttons img {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.buttons img:hover {
+    transform: scale(1.1);
 }

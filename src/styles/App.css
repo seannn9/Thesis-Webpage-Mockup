@@ -40,6 +40,7 @@
 
 .navbar a:hover:not(.active) {
     background-color: #333;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .active {
@@ -196,17 +197,6 @@
             opacity: 1;
         }
     }
-
-    /* @keyframes fade-in-right {
-        from {
-            transform: translateX(300px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    } */
 }
 
 .rightContainer {
@@ -226,6 +216,17 @@
     border-radius: 10px;
 }
 
-.rightContainer button img:hover {
+.rightContainer .active img {
+    background-color: #34f47e;
+    color: black !important;
+}
+
+.rightContainer .active img:hover {
+    background-color: #2dd16c;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rightContainer .notActive img:hover {
     background-color: #333;
+    transition: background-color 0.3s ease-in-out;
 }

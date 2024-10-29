@@ -15,6 +15,7 @@ function Home() {
             <Navbar
                 activeHome="active"
                 onNotificationClick={toggleNotifications}
+                activeNotif={isActive ? "active" : "notActive"}
             />
             <Notif status={isActive ? "active" : "notActive"} />
             <div className="backgroundContainer" id="home">

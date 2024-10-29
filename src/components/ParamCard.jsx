@@ -16,6 +16,7 @@ function ParamCard(props) {
                     <br />
                     <input
                         type="text"
+                        inputMode="numeric"
                         name={props.name}
                         className={props.inputClassName}
                         placeholder="Value"
