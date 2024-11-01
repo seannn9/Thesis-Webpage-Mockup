@@ -27,7 +27,7 @@ function Navbar(props) {
                     className="rightContainer"
                     style={{ marginRight: "20px", float: "right" }}
                 >
-                    <Link className={props.activeLogin} to="/login">
+                    <Link className={props.activeLogin} to="/register">
                         Login / Register
                     </Link>
                     <button

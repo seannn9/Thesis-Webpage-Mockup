@@ -7,6 +7,7 @@ import Presets from "./pages/Presets";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/parameters" element={<Parameters />}></Route>
                 <Route path="/presets" element={<Presets />}></Route>
                 <Route path="/login" element={<Login />}></Route>
+                <Route path="/register" element={<Register />}></Route>
             </Routes>
         </Router>
     );
