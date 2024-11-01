@@ -4,7 +4,7 @@ import "../styles/Login.css";
 import plantImg from "../images/plant.jpg";
 import { Helmet } from "react-helmet";
 
-function Login() {
+function Register() {
     return (
         <>
             <Helmet>
@@ -70,7 +70,7 @@ function Login() {
                     </form>
                     <p>
                         Already have an account?&nbsp;
-                        <Link to="/">Login</Link>
+                        <Link to="/login">Login</Link>
                     </p>
                 </div>
             </div>
@@ -78,4 +78,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;
