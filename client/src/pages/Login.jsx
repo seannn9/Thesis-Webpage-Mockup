@@ -3,8 +3,30 @@ import { Link } from "react-router-dom";
 import "../styles/Login.css";
 import plantImg from "../images/plant.jpg";
 import { Helmet } from "react-helmet";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Login() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios
+            .post("https://optimizingplantgrowth.vercel.app/login", {
+                email,
+                password,
+            })
+            .then((result) => {
+                console.log(result);
+                if (result.data === "Success") {
+                    navigate("/#home");
+                }
+            })
+            .catch((err) => console.log(err));
+    };
     return (
         <>
             <Helmet>
@@ -25,7 +47,7 @@ function Login() {
             <Navbar activeLogin="active" />
             <div className="mainContainer">
                 <div className="formContainer">
-                    <form action="" method="POST">
+                    <form onSubmit={handleSubmit}>
                         <legend>Login</legend>
                         <label>Email:</label>
                         <br />
@@ -33,6 +55,7 @@ function Login() {
                             type="email"
                             name="email"
                             placeholder="Email"
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                         <br />
@@ -42,6 +65,7 @@ function Login() {
                             type="password"
                             name="password"
                             placeholder="Password"
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                         <br />

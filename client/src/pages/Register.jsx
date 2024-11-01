@@ -3,8 +3,28 @@ import { Link } from "react-router-dom";
 import "../styles/Login.css";
 import plantImg from "../images/plant.jpg";
 import { Helmet } from "react-helmet";
+import { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios
+            .post("https://optimizingplantgrowth.vercel.app/register", {
+                email,
+                password,
+            })
+            .then((result) => {
+                console.log(result);
+                navigate("/login");
+            })
+            .catch((err) => console.log(err));
+    };
     return (
         <>
             <Helmet>
@@ -25,7 +45,7 @@ function Register() {
             <Navbar activeLogin="active" />
             <div className="mainContainer">
                 <div className="formContainer">
-                    <form action="" method="POST">
+                    <form onSubmit={handleSubmit}>
                         <legend>Sign Up</legend>
                         <label>Email:</label>
                         <br />
@@ -33,6 +53,7 @@ function Register() {
                             type="email"
                             name="email"
                             placeholder="Email"
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                         <br />
@@ -42,6 +63,7 @@ function Register() {
                             type="password"
                             name="password"
                             placeholder="Password"
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                         <br />
@@ -60,7 +82,7 @@ function Register() {
                         </div>
                         <button
                             type="submit"
-                            value="Login"
+                            value="Register"
                             className="loginBtn"
                         >
                             Register
