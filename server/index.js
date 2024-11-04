@@ -6,14 +6,9 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(
-    cors({
-        origin: "https://optimizingplantgrowth.vercel.app/",
-        credentials: true,
-    })
-);
+app.use(cors());
 
-mongoose.connect(process.env.MONGODB_CONNECT_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 app.post("/login", (req, res) => {
     const { email, password } = req.body;
