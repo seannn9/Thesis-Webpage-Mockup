@@ -8,9 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-        origin: "https://optimizingplantgrowth.vercel.app",
+        origin: ["https://optimizingplantgrowth.vercel.app"],
         credentials: true,
-        methods: ["GET", "POST"],
+        methods: ["POST", "GET"],
     })
 );
 
