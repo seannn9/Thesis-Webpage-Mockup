@@ -11,11 +11,12 @@ function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    axios.defaults.withCredentials = true;
 
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("https://optimizingplantgrowth.vercel.app/register", {
+            .post("https://thesis-webpage-mockup-api.vercel.app/register", {
                 email,
                 password,
             })
