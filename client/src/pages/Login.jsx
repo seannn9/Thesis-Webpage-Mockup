@@ -76,8 +76,8 @@ function Login() {
                                 id="acceptTerms"
                                 name="acceptTerms"
                                 value="Accept"
-                                title="Please accept the terms and conditions to proceed"
-                                required
+                                // title="Please accept the terms and conditions to proceed"
+                                // required
                             />
                             <label htmlFor="acceptTerms" className="terms">
                                 Stay signed in?
